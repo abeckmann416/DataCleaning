@@ -24,19 +24,19 @@ The column titles are then modified to reflect clarify the actual measurements t
 Finally, mean values are computed for each subject and for each activity.
 
 *Please refer to the README file in this folder for the code snippets and explanation of what they do.
+*the columns 3-81 represent mean values for each subject/activity type for the variables described in the titles:* 
 
- [1] "Subject"  -a number denoting a subject                                                      
- [2] "Label" - an activity type: LAYING. SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS or WALKING_UPSTAIRS  
-
-*the other columns represent mean values for each subject/activity type for the variables described in the titles:* 
-
- [3] "TimeBodyAccelerometer.MeanValue...X"                            
- [4] "TimeBodyAccelerometer.MeanValue...Y"                            
- [5] "TimeBodyAccelerometer.MeanValue...Z"                            
- [6] "TimeBodyAccelerometer.StandardDeviation...X"                    
- [7] "TimeBodyAccelerometer.StandardDeviation...Y"                    
- [8] "TimeBodyAccelerometer.StandardDeviation...Z"                    
- [9] "TimeGravityAccelerometer.MeanValue...X"                         
+|Number|Variable Name|Variable Format|Description|
+--------------------------------------------------
+| [1] |Subject|Numeric|  -a number denoting a subject|                                                      
+| [2] |Label| a character picklist| LAYING. SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS or WALKING_UPSTAIRS|  
+| [3] |TimeBodyAccelerometer.MeanValue...X|                            
+| [4] |TimeBodyAccelerometer.MeanValue...Y|                            
+| [5] |TimeBodyAccelerometer.MeanValue...Z|                          
+| [6] |TimeBodyAccelerometer.StandardDeviation...X|                   
+| [7] |TimeBodyAccelerometer.StandardDeviation...Y|                    
+| [8] |TimeBodyAccelerometer.StandardDeviation...Z|                    
+| [9] |TimeGravityAccelerometer.MeanValue...X|                        
 [10] "TimeGravityAccelerometer.MeanValue...Y"                         
 [11] "TimeGravityAccelerometer.MeanValue...Z"                         
 [12] "TimeGravityAccelerometer.StandardDeviation...X"                 
