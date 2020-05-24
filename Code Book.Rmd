@@ -10,31 +10,26 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 This document describes data transformation from the original set presented in the folder **UCI HAR Dataset** to the summary file **CleanSetOfMeans.txt** of mean values of mean and standard deviation measurements of the initial data set performed by the script *run_analysis.R* in this folder.
-\br
-\br
+
 The initial dara set is comprised of two subsets, one is for training and the other is for testing the algorythm. The data of each set is organzied into 2 subfolders, **test** and **train**, each of which contains a list of subjects denoted by numbers per each measurement, **subject_test.txt** (and **subject_train.txt**, respectivel), the list of activity codes per each measurement **y_test.txt** (and **y_train.txt**, respectively) and the list of measurements themselves **X_test.txt** and **X_train.txt**. In addition, these subfolders contain subfolders **Initial Signals** from which the above-mentioned summaries are derived.
-\br
-\br
+
 The core directory **UCI HAR Dataset** also contains the file **activity_labels.txt**, containing translations for the 6 different types ofinputs of the files **y_test.txt** and **y_train.txt**, the file **features.txt** with 561 variables measured in the experiment and in the order provided in the files **X_test.txt** and **X_train.txt**
-\br
-\br
+
 The script *run_analysis.R* checks for the presence of the initial data folder  **UCI HAR Dataset** in the working directory, combines the test and train files of measurements (**X**), activity codes (**y**) and **subjects** and assembles them into one data set
 \br
 Then only the measurements of *9*mean values** and **standard deviations** are extracted from this data set, which reduced the number of measurement variables to 79 and the total number of columns to 81.
-\br
-\br
+
 The column titles are then modified to reflect clarify the actual measurements they describe
-\br
-\br
+
 Finally, mean values are computed for each subject and for each activity.
 
 *Please refer to the README file in this folder for the code snippets and explanation of what they do.
 
  [1] "Subject"  -a number denoting a subject                                                      
  [2] "Label" - an activity type: LAYING. SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS or WALKING_UPSTAIRS  
- \br
+
 *the other columns represent mean values for each subject/activity type for the variables described in the titles:* 
- \br
+
  [3] "TimeBodyAccelerometer.MeanValue...X"                            
  [4] "TimeBodyAccelerometer.MeanValue...Y"                            
  [5] "TimeBodyAccelerometer.MeanValue...Z"                            
@@ -114,8 +109,7 @@ Finally, mean values are computed for each subject and for each activity.
 [79] "FrequencyencyBodyGyroscopeJerkMagnitude.MeanValue.."            
 [80] "FrequencyencyBodyGyroscopeJerkMagnitude.StandardDeviation.."    
 [81] "FrequencyencyBodyGyroscopeJerkMagnitude.MeanValueFrequency."
-\br
-\br
+
 The results of these measurements are presented in the space-separated file **CleanSetOfMeans.txt**
  
 
