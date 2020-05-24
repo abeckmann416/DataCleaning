@@ -101,7 +101,9 @@ Finally, mean values are computed for each subject and for each activity.
 [72] "FrequencyencyBodyAccelerometerMagnitude.MeanValueFrequency."    
 [73] "FrequencyencyBodyAccelerometerJerkMagnitude.MeanValue.."        
 [74] "FrequencyencyBodyAccelerometerJerkMagnitude.StandardDeviation.."
+
 [75] "FrequencyencyBodyAccelerometerJerkMagnitude.MeanValueFrequency."
+
 [76] "FrequencyencyBodyGyroscopeMagnitude.MeanValue.."                
 [77] "FrequencyencyBodyGyroscopeMagnitude.StandardDeviation.."        
 [78] "FrequencyencyBodyGyroscopeMagnitude.MeanValueFrequency."        
